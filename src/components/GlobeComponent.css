@@ -1,0 +1,17 @@
+/* GlobeComponent.css */
+
+.globe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure it takes full height of parent */
+  }
+  
+  .globe-wrapper {
+    width: 100%; /* Ensure it takes full width of parent */
+    max-width: 600px; /* Adjust maximum width as needed */
+    max-height: 400px; /* Adjust maximum height as needed */
+    overflow: hidden; /* Ensure the globe doesn't overflow its container */
+    background-color: transparent; /* Ensure transparency */
+  }
+  
