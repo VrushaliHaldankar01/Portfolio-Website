@@ -1,0 +1,21 @@
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: transparent; /* Initial color of the underline */
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover:before {
+    background-color: #8a3ab9; /* Color of the underline on hover */
+  }
+  
