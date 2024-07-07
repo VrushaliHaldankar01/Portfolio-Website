@@ -1,7 +1,8 @@
-import React from 'react';
+//import React from 'react';
+import React, { useEffect, useState } from 'react';
 import heroimage from '../assets/ProfilePic.jpg';
 import logo from '../assets/logo.png';
-import GlobeComponent from '../components/GlobeComponent'; // Ensure to import the GlobeComponent
+import GlobeComponent from './GlobeComponent'; // Ensure to import the GlobeComponent
 import { TypeAnimation } from 'react-type-animation';
 import './Hero.css'; // Ensure to import the CSS file
 
@@ -10,7 +11,10 @@ const Hero = () => {
   const cvPath = '/assets/Vrushali_Haldankar.pdf';
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black'>
+    <div
+      className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black'
+      id='home'
+    >
       <div className='col-span-1 my-auto mx-auto flip-container'>
         <div className='flipper'>
           {/* Front of the flipper */}

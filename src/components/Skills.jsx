@@ -16,46 +16,24 @@ const Skills = () => {
       </h2>
       <br />
       <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 place-items-center'>
-        <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px]'>
-          <img src={html} alt='HTML' />
-          <p className='mt-2'>HTML</p>
-        </div>
-
-        <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px]'>
-          <img src={css} alt='CSS' />
-          <p className='mt-2'>CSS</p>
-        </div>
-
-        <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px]'>
-          <img src={javascript} alt='Javascript' />
-          <p className='mt-2'>Javascript</p>
-        </div>
-
-        <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px]'>
-          <img src={mysql} alt='Mysql' />
-          <p className='mt-2'>Mysql</p>
-        </div>
-
-        <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px]'>
-          <img src={react} alt='React' />
-          <p className='mt-2'>React</p>
-        </div>
-
-        <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px]'>
-          <img src={node} alt='Node.js' />
-          <p className='mt-2'>Node.js</p>
-        </div>
-
-        <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px]'>
-          <img src={git} alt='Git' />
-          <p className='mt-2'>Git</p>
-        </div>
-
-        <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px]'>
-          <img src={mongodb} alt='MongoDB' />
-          <p className='mt-2'>MongoDB</p>
-        </div>
+        <SkillCard image={html} title='HTML' />
+        <SkillCard image={css} title='CSS' />
+        <SkillCard image={javascript} title='Javascript' />
+        <SkillCard image={mysql} title='Mysql' />
+        <SkillCard image={react} title='React' />
+        <SkillCard image={node} title='Node.js' />
+        <SkillCard image={git} title='Git' />
+        <SkillCard image={mongodb} title='MongoDB' />
       </div>
+    </div>
+  );
+};
+
+const SkillCard = ({ image, title }) => {
+  return (
+    <div className='flex flex-col items-center m-4 w-[80px] md:w-[100px] hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out'>
+      <img src={image} alt={title} />
+      <p className='mt-2'>{title}</p>
     </div>
   );
 };

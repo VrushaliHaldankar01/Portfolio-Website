@@ -28,6 +28,7 @@ const About = () => {
           src={aboutImg}
           width={300}
           height={300}
+          alt='About me'
         />
       </div>
     </div>
