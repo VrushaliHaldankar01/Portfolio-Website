@@ -48,6 +48,11 @@ function Navbar() {
               : 'fixed left-[-100%]'
           }
         >
+          <div className='flex justify-end items-center md:hidden p-4'>
+            <div onClick={handleNav} className='mr-4'>
+              <AiOutlineClose size={20} />
+            </div>
+          </div>
           <h1 className='text-3xl primary-color m-4'>Vrushali Haldankar</h1>
           <ul className='p-8 text-2xl'>
             <li className='p-2'>
