@@ -38,7 +38,7 @@ function Navbar() {
 
       <div className='bg-black h-[100px]'>
         <div onClick={handleNav} className='block md:hidden mr-6'>
-          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+          {!nav ? <AiOutlineMenu size={20} /> : null}
         </div>
 
         <div
@@ -49,9 +49,11 @@ function Navbar() {
           }
         >
           <div className='flex justify-end items-center md:hidden p-4'>
-            <div onClick={handleNav} className='mr-4'>
-              <AiOutlineClose size={20} />
-            </div>
+            {nav ? (
+              <div onClick={handleNav} className='mr-4'>
+                <AiOutlineClose size={20} />
+              </div>
+            ) : null}
           </div>
           <h1 className='text-3xl primary-color m-4'>Vrushali Haldankar</h1>
           <ul className='p-8 text-2xl'>
