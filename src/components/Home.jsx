@@ -53,7 +53,7 @@ const Hero = () => {
           {/* Download CV button */}
           <a
             href={cvPath}
-            download='Vrushali_Haldankar_R.pdf'
+            download='Vrushali_Haldankar.pdf'
             className='px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-purple-500 to-indigo-500 text-white transition-transform duration-300 hover:scale-110'
           >
             Download Resume
