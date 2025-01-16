@@ -1,0 +1,30 @@
+/* Volunteering.css */
+
+.volunteering {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .volunteering-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .volunteering-img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .volunteering-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .volunteering-overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .volunteering-overlay:hover {
+    opacity: 0.9;
+  }
+  
