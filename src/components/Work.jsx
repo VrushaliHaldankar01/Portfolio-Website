@@ -24,7 +24,7 @@ const Work = () => {
     },
     {
       image: proj4,
-      link: 'https://github.com/VrushaliHaldankar01/Express-Daily-Journal',
+      link: 'https://github.com/VrushaliHaldankar01/BloosomBooms',
     },
     {
       image: proj5,
@@ -47,7 +47,7 @@ const Work = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className='transform  transition-transform duration-300 hover:scale-105 overflow-hidden
+            className='transform transition-transform duration-300 hover:scale-105 overflow-hidden
               shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center
               mx-auto content-div h-[200px] bg-cover relative'
           >

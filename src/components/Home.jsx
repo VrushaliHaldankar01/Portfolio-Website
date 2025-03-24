@@ -16,18 +16,8 @@ const Hero = () => {
       id='home'
     >
       <div className='col-span-1 my-auto mx-auto flip-container'>
-        <div className='flipper'>
-          {/* Front of the flipper */}
-          <div className='front bg-gradient-to-br from-purple-500 to-indigo-500 rounded-full w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] object-cover shadow-lg flex items-center justify-center'>
-            <div className='text-white text-2xl font-bold flex flex-col items-center'>
-              <span>&lt;Code&gt;</span>
-              <span>&lt;Innovate/&gt;</span>
-              <span>&lt;Create/&gt;</span>
-            </div>
-          </div>
-
-          {/* Back of the flipper */}
-          <div className='back rounded-full w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] object-cover shadow-lg bg-gradient-to-br from-orange-500 to-pink-500'>
+        <div className=''>
+          <div className='front rounded-full w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] object-cover shadow-lg bg-gradient-to-br from-orange-500 to-pink-500'>
             <img
               src={heroimage}
               alt='hero image'
@@ -53,7 +43,7 @@ const Hero = () => {
           {/* Download CV button */}
           <a
             href={cvPath}
-            download='Vrushali_Haldankar.pdf'
+            download='Vrushali_Haldankar_2025.pdf'
             className='px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-purple-500 to-indigo-500 text-white transition-transform duration-300 hover:scale-110'
           >
             Download Resume
